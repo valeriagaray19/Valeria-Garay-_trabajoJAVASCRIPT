@@ -1,0 +1,20 @@
+[
+    {
+      "titulo": "Lo nuevo de HP",
+      "descripcion": "En 2025, HP está enfocando sus esfuerzos en varias áreas clave para adaptarse a las tendencias actuales y futuras del mercado. ",
+       "enlace": "../views/presupuesto.html",
+        "imagen": "../img/logo.png"
+    },
+    {
+      "titulo": "Apple VS HP",
+      "descripcion": "Al comparar portátiles de Apple y HP, es esencial considerar diversos factores como diseño, rendimiento, sistema operativo y precio para determinar cuál se adapta mejor a tus necesidades.",
+         "enlace": "../views/presupuesto.html"
+    },
+    {
+      "titulo": "Tendencia de Apple",
+      "descripcion": "En 2025, Apple está enfocando sus esfuerzos en varias áreas clave para consolidar su posición en el mercado tecnológico.",
+         "enlace": "../views/presupuesto.html"
+    }
+
+  ]
+  
