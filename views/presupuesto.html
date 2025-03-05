@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="../img/logo.png   " alt="Logo de la empresa">
+            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <form id="formulario-presupuesto" class="formulario">
+        <fieldset id="contacto">
+            <legend>Datos de contacto</legend>
+            <div class="formularioitems">
+                <label for="nombre">1 Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="formularioitems">
+                <label for="apellidos">1 Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+            </div>
+            <div class="formularioitems">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" required>
+            </div>
+            <div class="formularioitems">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Presupuesto</legend>
+            <div class="formularioitems">
+                <label for="producto">Producto:</label>
+                <select name="producto" id="producto">
+                    <option value="0">Seleccione un producto</option>
+                    <option value="200">HP X360-200</option>
+                    <option value="300">Dell-300</option>
+                    <option value="400">Apple Notebook-400</option>
+                </select>
+            </div>
+            <div class="formularioitems">
+                <label for="plazo">Plazo (meses):</label>
+                <input type="number" name="plazo" id="plazo" placeholder="Plazo en meses">
+            </div>
+            <div class="formularioitems">
+                <label>Extras:</label>
+                <input type="checkbox" name="extra1" id="extra1" value="50"> Extra 1
+                <input type="checkbox" name="extra2" id="extra2" value="75"> Extra 2
+                <input type="checkbox" name="extra3" id="extra3" value="100"> Extra 3
+            </div>
+            <div class="formularioitems">
+                <label class="presupuesto">Presupuesto:</label>
+                <p id="presupuesto">0</p>
+            </div>
+        </fieldset>
+    
+        <div class="formularioitems">
+            <input type="checkbox" name="condiciones" id="condiciones" required>
+            <label for="condiciones">Acepto las condiciones</label>
+        </div>
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="reset" id="reset">Resetear</button>
+    </form>
+    
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/"><img src="../img/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img src="../img/instagram.avif" alt="Instagram"></a>
+        </div>
+        <p>Paraguay, Ciudad del Este Km 7</p>
+        <a href="../views/aviso.html">Aviso legal</a>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
+

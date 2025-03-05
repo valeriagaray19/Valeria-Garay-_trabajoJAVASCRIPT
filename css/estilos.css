@@ -1,0 +1,565 @@
+
+/* Estilos para el logo pequeño */
+.logo-container {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.logo-container img {
+    height: 50px; /* Tamaño reducido del logo */
+    width: auto; /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra el logo */
+}
+
+.formulario {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fffcfc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+/* css para el google maps */
+#map {
+    width: 100%;
+    height: 500px;
+    margin: 20px auto;
+}
+.info-container {
+    margin-top: 20px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.image-container {
+    position: relative;
+    text-align: center;
+}
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.gallery img:hover {
+    transform: scale(1.1) rotate(2deg);
+    filter: brightness(1.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.info-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+.info-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Css para la galeria de imagenes */
+
+.galeria {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.visor {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.visor img {
+    max-width: 100%;
+    height: auto;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.miniaturas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.miniatura {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.miniatura img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.miniatura.seleccionada {
+    border: 2px solid blue;
+}
+/* Ajusta según el tamaño y diseño del slider */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Ajusta según el tamaño de tus imágenes */
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para la sección de noticias */
+#noticias {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(163, 97, 97);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#noticias h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#lista-noticias {
+    display: flex; /* Usamos flexbox para organizar las noticias */
+    flex-direction: row; /* Alineamos las noticias en fila horizontal */
+    justify-content: space-around; /* Espacio entre las noticias */
+    flex-wrap: wrap; /* Permite que las noticias pasen a la siguiente línea si no caben */
+}
+
+#lista-noticias div {
+    width: 30%; /* Cada noticia ocupa el 30% del ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho del elemento */
+    margin: 10px; /* Agregamos un pequeño margen para separar las noticias */
+    text-align: center; /* Centramos el contenido dentro de la noticia */
+    border: 1px solid #a42525;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+#lista-noticias div h3 {
+    margin-bottom: 10px;
+}
+
+#lista-noticias div p {
+    font-size: 0.9em; /* Tamaño de fuente para la descripción de la noticia */
+    color: #666;
+}
+#noticias {
+    background-color: #f5d8d8; /* Cambia este valor al color que desees */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección de productos */
+.productos-container {
+    display: flex; /* Usamos flexbox para organizar los productos */
+    flex-direction: row; /* Alineamos los productos en fila horizontal */
+    justify-content: space-around; /* Espacio entre los productos */
+    align-items: stretch; /* Estirar los elementos para que tengan la misma altura */
+    flex-wrap: wrap; /* Permite que los productos pasen a la siguiente línea si no caben */
+    padding: 20px;
+}
+
+.producto {
+    width: 30%; /* Cada producto ocupa el 30% del ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho del elemento */
+    margin: 10px; /* Agregamos un pequeño margen para separar los productos */
+    text-align: center; /* Centramos el contenido dentro del producto */
+    border: 1px solid #955b5b;
+    border-radius: 8px;
+}
+
+.producto img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor del producto */
+    height: auto; /* La altura se ajusta proporcionalmente */
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.producto h3 {
+    margin: 10px 0; /* Espacio alrededor del título del producto */
+}
+
+.producto p {
+    font-size: 0.9em; /* Tamaño de fuente para la descripción del producto */
+    color: #666;
+    padding: 0 10px; /* Agregamos padding a los lados para que el texto no toque los bordes */
+}
+
+.boton-presupuesto {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px; /* Agregamos un margen superior para separar el botón de la descripción */
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.boton-presupuesto:hover {
+    background-color: #449d44;
+}
+
+ /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(10, 33%, 96%); /* Rosado claro */
+    color: #161515;
+}
+
+/* Header y Nav */
+header {
+    background-color: #645353;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative; /* Para el posicionamiento absoluto del nav */
+}
+
+/* Codigo css para los formulaios presupuestos */
+#formulario-presupuesto{
+
+    padding: 70px;;  
+}
+
+#nombre, #apellidos, #telefono, #contacto   { 
+    display: flex;
+    gap: 10px; /* Espaciado entre los divs */
+    justify-content: center; /* Centrar los elementos */
+    align-items: center; /* Alinear verticalmente */
+}      
+
+nav {
+    position: fixed; /* Fija la barra de navegación */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.9); /* Un poco transparente */
+    z-index: 100; /* Asegura que esté por encima de todo */
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #555;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    margin-top: 50px; /* Ajuste para evitar que el contenido se oculte detrás de la barra de navegación fija */
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Estilos específicos del formulario */
+formulario {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #449d44;
+}
+
+a.gal {
+    display: block;
+    background: url(../images/magnify.png) center center no-repeat #ff6260;
+}
+
+a.gal img {
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+
+a.gal:hover img {
+    opacity: 0.2;
+}
+
+.latest {
+    overflow: hidden;
+
+    margin-top: -1px;
+    margin-left: -20px;
+}
+
+.latest a.gal {
+    width: 117px;
+    float: left;
+    margin: 0 0 14px 20px;
+}
+
+
+.box1 {
+    overflow: hidden;
+    margin-top: 30px;
+    background-color: #f3f6f8;
+    border: 2px solid #ffe693;
+
+}
+
+.box1 .inner {
+    border: 1px solid #fff;
+    padding: 0;
+}
+
+.box1 blockquote {
+    padding-bottom: 22px;
+    padding-left: 46px;
+    background: url(../images/quotes_bg.png) 21px 29px no-repeat;
+    float: left;
+    width: 230px;
+    padding-top: 42px;
+
+}
+
+.box1 blockquote p {
+    margin-bottom: 21px;
+    font-style: italic;
+}
+
+.box1 blockquote+blockquote {
+    margin-left: 40px;
+}
+
+.box1 blockquote span {
+    margin-bottom: 3px;
+    display: block;
+    color: #2a394e;
+    font: 18px/24px 'Economica', sans-serif;
+}
+
+.gallery {
+    overflow: hidden;
+    margin-top: -2px;
+    margin-left: -4px;
+}
+
+.gallery a.gal {
+    margin-left: 4px;
+    margin-bottom: 4px;
+    float: left;
+}
+
+.container {
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+}
+p {
+    line-height: 1.6;
+}
+.container {
+    width: 80%; /* O ajusta el ancho según prefieras */
+    max-width: 900px; /* Evita que el contenido sea demasiado ancho en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor */
+    text-align: center; /* Centra el texto */
+    padding: 70px;; 
+}
+
+
+
+
+

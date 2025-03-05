@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo de la empresa">
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="views/galeria.html">Galería</a></li>
+                <li><a href="views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active"><img src="img/laptop1.jpg" alt="Imagen 1"></div>
+                <div class="slide"><img src="img/dell1.jpeg" alt="Imagen 2"></div>
+                <div class="slide"><img src="img/laptop1.jpg" alt="Imagen 3"></div>
+            </div>
+            <div class="controls">
+                <button class="prev">Anterior</button>
+                <button class="next">Siguiente</button>
+            </div>
+        </div>
+        <section id="seccion2">
+            <h2>Productos Disponibles</h2>
+            <div class="productos-container">
+                <div class="producto">
+                    <img src="img/laptop1.jpg" alt="Producto 1">
+                    <h3>HP x3600</h3>
+                    <p>Pantalla Tactil</p>
+                    <a href="views/presupuesto.html" class="boton-presupuesto">Calcular Presupuesto</a>
+                </div>
+                <div class="producto">
+                    <img src="img/apple1.jpeg" alt="Producto 2">
+                    <h3>Apple MacBook Pro</h3>
+                    <p>Es un gran momento para cambiar tu MacBook Pro</p>
+                    <a href="views/presupuesto.html" class="boton-presupuesto">Calcular Presupuesto</a>
+                </div>
+                <div class="producto">
+                    <img src="img/dell1.jpeg" alt="Producto 3">
+                    <h3>Dell</h3>
+                    <p>Dell ofrece soluciones tecnológicas, servicios y asistencia.</p>
+                    <a href="views/presupuesto.html" class="boton-presupuesto">Calcular Presupuesto</a>
+                </div>
+            </div>
+        </section>
+        <section id="seccion3">
+            <h2>¡Suscríbete a nuestras noticias!</h2>
+            <p>Recibe ofertas y novedades en tu correo.</p>
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+            <button onclick="subscribe()">Suscribirse</button>
+            <p id="message" class="message"></p>
+        </section>
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <div id="lista-noticias"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/"><img src="img/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img src="img/instagram.avif" alt="Instagram"></a>
+        </div>
+        <p>Paraguay, Ciudad del Este Km 7</p>
+        <a href="views/aviso.html">Aviso legal</a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

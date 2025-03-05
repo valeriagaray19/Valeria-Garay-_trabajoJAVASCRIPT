@@ -1,0 +1,14 @@
+[
+    {
+        "src": "img/laptop1.jpg",
+        "alt": "Descripción de la imagen 1"
+    },
+    {
+        "src": "img/imagen2.jpg",
+        "alt": "Descripción de la imagen 2"
+    },
+    {
+        "src": "img/imagen3.jpg",
+        "alt": "Descripción de la imagen 3"
+    }
+]

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="../img/logo.png" alt="Logo de la empresa">
+            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Galería de Imágenes</h1>
+    </header>
+    
+    <div class="gallery" id="gallery">
+        <div class="image-container">
+            <img src="../img/laptop1.jpg" alt="Imagen 1">
+            <button class="info-btn" onclick="mostrarInfo(1)">Más Información</button>
+        </div>
+        <div class="image-container">
+            <img src="../img/dell1.jpeg" alt="Imagen 2">
+            <button class="info-btn" onclick="mostrarInfo(2)">Más Información</button>
+        </div>
+        <div class="image-container">
+            <img src="../img/apple1.jpeg" alt="Imagen 3">
+            <button class="info-btn" onclick="mostrarInfo(3)">Más Información</button>
+        </div>
+        <div class="image-container">
+            <img src="../img/laptop1.jpg" alt="Imagen 1">
+            <button class="info-btn" onclick="mostrarInfo(1)">Más Información</button>
+        </div>
+        <div class="image-container">
+            <img src="../img/dell1.jpeg" alt="Imagen 2">
+            <button class="info-btn" onclick="mostrarInfo(2)">Más Información</button>
+        </div>
+        <div class="image-container">
+            <img src="../img/apple1.jpeg" alt="Imagen 3">
+            <button class="info-btn" onclick="mostrarInfo(3)">Más Información</button>
+        </div>
+        <div class="image-container">
+            <img src="../img/dell1.jpeg" alt="Imagen 2">
+            <button class="info-btn" onclick="mostrarInfo(2)">Más Información</button>
+        </div>
+        <div class="image-container">
+            <img src="../img/apple1.jpeg" alt="Imagen 3">
+            <button class="info-btn" onclick="mostrarInfo(3)">Más Información</button>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/"><img src="../img/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img src="../img/instagram.avif" alt="Instagram"></a>
+        </div>
+        <p>Paraguay, Ciudad del Este Km 7</p>
+        <a href="../views/aviso.html">Aviso legal</a>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+    <script>
+        function mostrarInfo(num) {
+            alert(`Imagen ${num}: https://source.unsplash.com/random/300x200?sig=${num}`);
+        }
+    </script>
+</body>
+</html>
+
+
